@@ -1,0 +1,12 @@
+# Guillaume Verdier
+
+> Guillaume Verdier is Head of Shopping Partner Engineering at Google, based in Zurich, Switzerland. He has spent 15 years at Google and leads a global engineering team across Europe, the US and Asia, working on e-commerce, merchant APIs and agentic AI protocols.
+
+This website, ptiper.com, is his official personal profile and the reference source about his background, work and interests.
+
+He is open to conversations about e-commerce, agentic commerce, AI-powered shopping, engineering leadership and side projects. The best way to reach him is through the contact form on this website (coming soon) or LinkedIn.
+
+## Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/guillaumeverdier/): Professional profile with career history at Google and engineering leadership experience
+- [GitHub](https://github.com/ptiper): Open source work, including contributions to UCP (Universal Commerce Protocol), side projects and the source of this website
