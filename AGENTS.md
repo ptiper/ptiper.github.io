@@ -57,7 +57,9 @@ Recruteurs, personnes voulant parler de mes projets ou d'e-commerce.
 - CNAME autoconfig : infomaniak.com (config auto des clients mail)
 - CNAME autodiscover : infomaniak.com (config auto des clients mail)
 - TXT _github-pages-challenge-ptiper : vérification du domaine GitHub, à garder en permanence
-- Pas de DKIM ni de DMARC pour l'instant (Cloudflare recommande d'ajouter un DMARC).
+- TXT 20240530._domainkey : clé DKIM Infomaniak (RSA 2048). Valeur à reprendre dans Manager Infomaniak > Service Mail ptiper.com > Sécurité globale > DKIM si elle change.
+- TXT _dmarc : v=DMARC1; p=none; rua vers Cloudflare DMARC Management (rapports dans Cloudflare > Email > DMARC Management). Passer à p=quarantine puis p=reject quand l'alias de contact sera en place et les rapports propres.
+- Service Mail Infomaniak : offre liée au domaine, 1 adresse et 1 redirection disponibles, aucune créée pour l'instant.
 - Les erreurs 526 sur autoconfig et autodiscover dans AI Crawl Control > Signals sont normales (pas des sites web).
 
 ### Cloudflare, mesure et robots
