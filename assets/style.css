@@ -53,6 +53,9 @@ body {
 
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
 a:hover { text-decoration-thickness: 2px; }
+/* Liens discrets dans le texte (sources, articles) : soulignement pointillé très léger. */
+a.quiet { text-decoration-style: dotted; text-decoration-color: var(--rule); text-decoration-thickness: 1.5px; }
+a.quiet:hover, a.quiet:focus-visible { text-decoration-style: solid; text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .skip {
