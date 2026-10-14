@@ -131,6 +131,8 @@ h1 {
 
 .sketch { margin: 2rem auto 0; max-width: 30rem; }
 .sketch svg { display: block; width: 100%; height: auto; color: var(--ink); }
+/* Formes pleines du dessin : peintes avec la couleur du fond pour masquer ce qui est derrière. */
+.sketch .f { fill: var(--paper); }
 .sketch figcaption {
   margin-top: 0.25rem;
   font-family: var(--hand);
