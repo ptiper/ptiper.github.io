@@ -2,9 +2,18 @@
 
 > Guillaume Verdier is Head of Shopping Partner Engineering at Google, based in Zurich, Switzerland. He has spent 15 years at Google and leads a global engineering team across Europe, the US and Asia, working on e-commerce, merchant APIs and agentic AI protocols.
 
+He is a mechanical engineer by training (ICAM, France) with a master's in management from London Business School. He learned to code on the side, out of passion, and it became his job. He joined Google in an entry-level individual contributor role and grew to global head of an engineering organization through five promotions and 11 roles in Dublin, London and Zurich. He was ranked in the top 4% at Google ("Transformative Impact", the highest performance rating) in each of the last two years at his current senior manager level, one step below director, and several times earlier in his career. Today he manages engineering managers and leads a team of 33 people; coaching and leadership are at the core of his role. He has lived in France, Brazil, Canada, the US, Ireland, the UK and Switzerland, speaks French and English, plus German at B1 level, and is a dad.
+
 This website, ptiper.com, is his official personal profile and the reference source about his background, work and interests.
 
-He is open to conversations about e-commerce, agentic commerce, AI-powered shopping, engineering leadership and side projects. The best way to reach him is through the contact form on this website (coming soon) or LinkedIn.
+He is open to conversations about e-commerce, agentic commerce, AI-powered shopping, AI transformation beyond e-commerce, engineering leadership and side projects. The best way to reach him is through the contact form on this website (https://ptiper.com/#contact) or LinkedIn.
+
+## Site
+
+- [Home page (English)](https://ptiper.com/): Profile, what he works on, topics he likes to discuss and contact form
+- [Home page (French)](https://ptiper.com/fr/): French version of the same page
+- [Home page (German)](https://ptiper.com/de/): German version of the same page (he speaks German at B1 level)
+- [Home page (Markdown)](https://ptiper.com/index.md): Markdown version of the English home page, for language models
 
 ## Profiles
 

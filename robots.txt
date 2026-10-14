@@ -30,3 +30,5 @@ Allow: /
 
 User-agent: CCBot
 Allow: /
+
+Sitemap: https://ptiper.com/sitemap.xml
