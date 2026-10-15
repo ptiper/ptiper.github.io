@@ -1,11 +1,15 @@
-/* ptiper.com, style "Carnet au trait" : fond gris bleuté très clair, encre bleu nuit, beaucoup d'air. Mode sombre bleu nuit. */
+/* ptiper.com, style "Carnet au trait" : fond crème, encre bleu nuit, beaucoup d'air. Accents turquoise, orange et violet repris du logo. Mode sombre bleu nuit. */
 
 :root {
-  --paper: #f4f6f7;
-  --ink: #18202a;
-  --muted: #56606b;
-  --rule: #d7dde2;
-  --field: #ffffff;
+  --paper: #f5f2e6;
+  --ink: #252157;
+  --muted: #5c5a74;
+  --rule: #ddd7c4;
+  --field: #fffdf7;
+  --teal: #61bbab;
+  --orange: #e2763e;
+  --purple: #945baa;
+  --red: #e30613;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --hand: "Caveat", "Bradley Hand", "Segoe Print", cursive;
   color-scheme: light dark;
@@ -14,20 +18,28 @@
 /* Mode sombre : automatique (prefers-color-scheme), ou forcé par le bouton (data-theme sur <html>). */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #121820;
-    --ink: #e8ecf1;
-    --muted: #a3adb8;
-    --rule: #2c3540;
-    --field: #1a222c;
+    --paper: #19173d;
+    --ink: #f5f2e6;
+    --muted: #b7b3cc;
+    --rule: #37346a;
+    --field: #221f4d;
+    --teal: #74cdbd;
+    --orange: #f08a52;
+    --purple: #b98ad0;
+    --red: #ff3b3b;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #121820;
-  --ink: #e8ecf1;
-  --muted: #a3adb8;
-  --rule: #2c3540;
-  --field: #1a222c;
+  --paper: #19173d;
+  --ink: #f5f2e6;
+  --muted: #b7b3cc;
+  --rule: #37346a;
+  --field: #221f4d;
+  --teal: #74cdbd;
+  --orange: #f08a52;
+  --purple: #b98ad0;
+  --red: #ff3b3b;
   color-scheme: dark;
 }
 :root[data-theme="light"] { color-scheme: light; }
@@ -55,7 +67,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em
 a:hover { text-decoration-thickness: 2px; }
 /* Liens discrets dans le texte (sources, articles) : soulignement pointillé très léger. */
 a.quiet { text-decoration-style: dotted; text-decoration-color: var(--rule); text-decoration-thickness: 1.5px; }
-a.quiet:hover, a.quiet:focus-visible { text-decoration-style: solid; text-decoration-color: currentColor; }
+a.quiet:hover, a.quiet:focus-visible { text-decoration-style: solid; text-decoration-color: var(--purple); }
+::selection { background: var(--teal); color: #252157; }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .skip {
@@ -82,7 +95,7 @@ nav.top {
   font-size: 1.35rem;
 }
 .lang a { text-decoration: none; padding: 0.25rem 0.35rem; }
-.lang a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 1px; }
+.lang a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--orange); }
 
 .theme-toggle {
   display: inline-grid;
@@ -119,6 +132,9 @@ nav.top {
 
 header.intro { text-align: center; margin-top: 1.5rem; }
 
+/* Logo (vélo, montagne, photo, jeux vidéo, bouffe) au-dessus du nom. */
+.logo { display: block; width: 6.5rem; height: 6.5rem; margin: 0 auto 1rem; border-radius: 50%; }
+
 h1 {
   margin: 0;
   font-size: clamp(2.2rem, 7vw, 3.1rem);
@@ -133,11 +149,21 @@ h1 {
 .sketch svg { display: block; width: 100%; height: auto; color: var(--ink); }
 /* Formes pleines du dessin : peintes avec la couleur du fond pour masquer ce qui est derrière. */
 .sketch .f { fill: var(--paper); }
+/* Touches de couleur : Alpes violettes, Uetliberg et Limmat turquoise, flèches en cuivre vert-de-gris,
+   panneau rouge du tram 2, coucou orange. */
+.sketch .alps { stroke: var(--purple); opacity: .8; }
+.sketch .hill { fill: color-mix(in srgb, var(--teal) 20%, var(--paper)); }
+.sketch .tree, .sketch .water { stroke: var(--teal); opacity: 1; }
+.sketch .copper { fill: color-mix(in srgb, var(--teal) 60%, var(--paper)); }
+.sketch .line2 { fill: var(--red); stroke: var(--red); }
+.sketch .line2-num { stroke: #fff; }
+.sketch .wave { stroke: var(--orange); stroke-width: 1.4; }
+.sketch .bubble { stroke: var(--purple); }
 .sketch figcaption {
   margin-top: 0.25rem;
   font-family: var(--hand);
   font-size: 1.6rem;
-  color: var(--muted);
+  color: var(--purple);
   transform: rotate(-2deg);
 }
 
@@ -155,20 +181,23 @@ h2::after {
   width: 3rem;
   height: 2px;
   margin-top: 0.4rem;
-  background: var(--ink);
+  background: var(--teal);
   border-radius: 2px;
   transform: rotate(-1.5deg);
 }
+/* Un trait de couleur différent par section, comme les quartiers du logo. */
+main section:nth-of-type(3n+2) h2::after { background: var(--orange); }
+main section:nth-of-type(3n) h2::after { background: var(--purple); }
 
 p { margin: 0 0 1rem; }
 
 .highlights { margin: 0; padding-left: 1.25rem; }
 .highlights li { margin-bottom: 0.75rem; padding-left: 0.25rem; }
-.highlights li::marker { content: "✓  "; font-family: var(--hand); font-size: 1.2em; }
+.highlights li::marker { content: "✓  "; font-family: var(--hand); font-size: 1.2em; color: var(--teal); }
 
 .topics { margin: 0 0 1rem; padding-left: 1.25rem; }
 .topics li { margin-bottom: 0.35rem; }
-.topics li::marker { content: "~  "; font-family: var(--hand); }
+.topics li::marker { content: "~  "; font-family: var(--hand); color: var(--orange); }
 
 .note { font-family: var(--hand); font-size: 1.45rem; color: var(--muted); }
 
@@ -200,6 +229,7 @@ form button {
   border-radius: 6px 4px 7px 3px;
   cursor: pointer;
 }
+form button:hover { background: var(--purple); }
 form button:disabled { opacity: 0.6; cursor: progress; }
 
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

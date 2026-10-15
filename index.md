@@ -26,7 +26,7 @@ I also stay hands-on. I build AI prototypes and AI-powered e-commerce demos with
 
 I'm a mechanical engineer by training ([ICAM](https://www.icam.fr/), France) and went on to [London Business School](https://www.london.edu/) for a master's in management. I learned to code on the side, out of passion, and it became my job. Before Google, I was an early employee at [Rangespan](https://www.bbc.com/news/technology-27261504), a London start-up later acquired by Google.
 
-I joined Google in 2011 in Dublin, moved to London, and have been in Zurich since 2018. Home has also been France, Brazil, Canada and the US. I work in French and English, also speak German (B1), and hold a Swiss C permit. Most importantly, I'm a dad.
+I joined Google in 2011 in Dublin, moved to London, and have been in Zurich since 2018. Home has also been France, Brazil, Canada and the US. I work in French and English, also speak German (B1), and hold a Swiss C permit. Outside work, it's cycling, mountains, photography, video games and good food: everything you see in my logo. Most importantly, I'm a dad.
 
 ## Let's talk
 
